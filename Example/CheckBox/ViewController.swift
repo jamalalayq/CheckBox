@@ -7,12 +7,18 @@
 //
 
 import UIKit
+import CheckBox
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var chk: CheckBox!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        chk.onClick = { (checkbox) in
+            print(checkbox.isChecked)
+        }
     }
 
     override func didReceiveMemoryWarning() {

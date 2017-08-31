@@ -1,0 +1,16 @@
+PODS:
+  - CheckBox (0.1.0)
+
+DEPENDENCIES:
+  - CheckBox (from `../`)
+
+EXTERNAL SOURCES:
+  CheckBox:
+    :path: ../
+
+SPEC CHECKSUMS:
+  CheckBox: 163cbbbbb2083a8a88fb420836154806c231a022
+
+PODFILE CHECKSUM: 02ea26fa13dae4ebd16b9f8b4970e9cb688274be
+
+COCOAPODS: 1.2.1

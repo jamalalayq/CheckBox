@@ -1,6 +1,6 @@
 import UIKit
 import XCTest
-import CheckBox
+
 
 class Tests: XCTestCase {
     

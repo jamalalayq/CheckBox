@@ -4,8 +4,8 @@ target 'CheckBox_Example' do
   pod 'CheckBox', :path => '../'
 
   target 'CheckBox_Tests' do
-    inherit! :search_paths
-
+      #inherit! :search_paths
+      pod 'CheckBox', :path => '../'
     
   end
 end
