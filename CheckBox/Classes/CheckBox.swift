@@ -51,6 +51,9 @@ public final class CheckBox: UIControl {
     @IBInspectable
     public var markColor: UIColor = UIColor.white { didSet { shapLayer.strokeColor = markColor.cgColor } }
     
+    @IBInspectable
+    public var cornerRadius: CGFloat = 3.0 { didSet { checkPanel.layer.cornerRadius = cornerRadius } }
+    
     public var onClick: ((CheckBox)->())?
     private var shapLayer: CAShapeLayer!, path: UIBezierPath!
     
@@ -135,7 +138,7 @@ public final class CheckBox: UIControl {
     
     private func checkBoxConfigurations() -> Void {
         checkPanel.layer.borderWidth = borderWidth
-        checkPanel.layer.cornerRadius = 2.5
+        checkPanel.layer.cornerRadius = cornerRadius
         checkPanel.layer.masksToBounds = true
         if (isChecked) {
             UIView.animate(withDuration: 0.6, delay: 0.0, options: .curveEaseInOut, animations: { [weak self] in
