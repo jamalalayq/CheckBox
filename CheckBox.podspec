@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-my own control.
+my own checkbox swift ui control.
                        DESC
 
   s.homepage         = 'https://github.com/gemgemo/CheckBox'
