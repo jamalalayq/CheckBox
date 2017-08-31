@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'CheckBox_Example' do
+  pod 'CheckBox', :path => '../'
+
+  target 'CheckBox_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
