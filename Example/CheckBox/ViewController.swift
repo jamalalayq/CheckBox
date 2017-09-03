@@ -16,6 +16,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        chk.cornerRadius = 7
         chk.onClick = { (checkbox) in
             print(checkbox.isChecked)
         }

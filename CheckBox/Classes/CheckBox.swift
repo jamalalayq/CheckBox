@@ -21,19 +21,21 @@ public final class CheckBox: UIControl {
     public var titleAlignment: NSTextAlignment = NSTextAlignment.left { didSet { setupTitleLabel() } }
     
     @IBInspectable
-    public var isChecked: Bool = false { didSet {
-        DispatchQueue.main.asyncAfter(deadline: .now()+0.01) { [weak self] in
-            self?.checkBoxConfigurations()
-        }
-        } }
+    public var isChecked: Bool = false { didSet { DispatchQueue.main.asyncAfter(deadline: .now()+0.00000001) { [weak self] in
+        self?.checkBoxConfigurations()
+        } } }
     
     @IBInspectable
     public var borderWidth: CGFloat = 1.6 { didSet { checkPanel.layer.borderWidth = borderWidth } }
     
     @IBInspectable
     public var selectedColor: UIColor = UIColor.blue { didSet {
-        checkPanel.layer.borderColor = selectedColor.cgColor
-        checkPanel.backgroundColor = selectedColor
+        if (selectedColor == .clear) {
+            checkPanel.layer.borderColor = unSelectedColor.cgColor
+        } else {
+            checkPanel.layer.borderColor = selectedColor.cgColor
+            checkPanel.backgroundColor = selectedColor
+        }
         } }
     
     @IBInspectable
@@ -43,7 +45,7 @@ public final class CheckBox: UIControl {
         } }
     
     @IBInspectable
-    public var markWidth: CGFloat = 3.0 { didSet{ shapLayer.lineWidth = markWidth } }
+    public var markWidth: CGFloat = 3.0 { didSet { shapLayer.lineWidth = markWidth } }
     
     @IBInspectable
     public var dimensions: CGFloat = 40.0 { didSet { setCheckPanelConstraints() } }
@@ -96,28 +98,19 @@ public final class CheckBox: UIControl {
     
     private func setup() -> Void {
         isUserInteractionEnabled = true
-        let button = UIButton()
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle("", for: .normal)
-        button.addTarget(self, action: #selector(onClick(_:)), for: .touchUpInside)
+        addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(onClick(_:))))
         addSubview(checkPanel)
         addSubview(lblTitle)
-        //setCheckPanelConstraints()
         setTitleLabelConstraints()
-        addSubview(button)
-        button.topAnchor.constraint(equalTo: topAnchor).isActive = true
-        button.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
-        button.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
-        button.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
         shapLayer = CAShapeLayer()
         path = UIBezierPath()
         
     }
     
-    @objc private func onClick(_ sender: UIButton) {
-        //print("super clicked")
+    @objc private func onClick(_ gesture: UITapGestureRecognizer) {
         isChecked = !isChecked
         sendActions(for: .touchUpInside)
+        sendActions(for: .valueChanged)
         onClick?(self)
     }
     
@@ -129,7 +122,6 @@ public final class CheckBox: UIControl {
     }
     
     private func setCheckPanelConstraints() -> Void {
-        //let dimensions = bounds.height * 0.60
         checkPanel.centerYAnchor.constraint(equalTo: centerYAnchor, constant: 0).isActive = true
         checkPanel.heightAnchor.constraint(equalToConstant: dimensions).isActive = true
         checkPanel.widthAnchor.constraint(equalToConstant: dimensions).isActive = true
@@ -143,12 +135,12 @@ public final class CheckBox: UIControl {
         if (isChecked) {
             UIView.animate(withDuration: 0.6, delay: 0.0, options: .curveEaseInOut, animations: { [weak self] in
                 guard let this = self else { return }
-                this.checkPanel.layer.borderColor = this.selectedColor.cgColor
+                this.checkPanel.layer.borderColor = (this.selectedColor == .clear) ? this.unSelectedColor.cgColor : this.selectedColor.cgColor
                 this.checkPanel.backgroundColor = this.selectedColor
                 }, completion: nil)
             check()
         } else {
-            UIView.animate(withDuration: 0.4, delay: 0.0, options: .curveEaseInOut, animations: { [weak self] in
+            UIView.animate(withDuration: 0.03, delay: 0.0, options: .curveEaseInOut, animations: { [weak self] in
                 guard let this = self else { return }
                 this.checkPanel.backgroundColor = this.backgroundColor
                 this.checkPanel.layer.borderColor = this.unSelectedColor.cgColor
@@ -164,12 +156,11 @@ public final class CheckBox: UIControl {
         lblTitle.textAlignment = titleAlignment
     }
     
+    
     private func check() -> Void {
-        //path = UIBezierPath()
-        path.move(to: CGPoint(x: checkPanel.bounds.width/2 * 0.27, y: checkPanel.bounds.height/2))
-        path.addLine(to: CGPoint(x: checkPanel.bounds.width/2 - checkPanel.bounds.width/2 * 0.4, y: checkPanel.bounds.height * 0.80))
-        path.addLine(to: CGPoint(x: checkPanel.bounds.width - 5, y: 5))
-        //shapLayer = CAShapeLayer()
+        path.move(to: CGPoint(x: checkPanel.bounds.width/2 * 0.35, y: checkPanel.bounds.height/2)) //27
+        path.addLine(to: CGPoint(x: checkPanel.bounds.width/2 - checkPanel.bounds.width/2 * 0.3, y: checkPanel.bounds.height * 0.80)) //4
+        path.addLine(to: CGPoint(x: checkPanel.bounds.width - 5, y: 5)) //5
         shapLayer.path = path.cgPath
         shapLayer.strokeColor = markColor.cgColor
         shapLayer.fillColor = UIColor.clear.cgColor
@@ -178,7 +169,6 @@ public final class CheckBox: UIControl {
         shapLayer.strokeStart = 0
         shapLayer.strokeEnd = 1
         checkPanel.layer.addSublayer(shapLayer)
-        
         let basicAnimation = CABasicAnimation(keyPath: "strokeEnd")
         basicAnimation.duration = 0.6
         basicAnimation.fromValue = 0.0
@@ -204,8 +194,6 @@ public final class CheckBox: UIControl {
                 self?.path.removeAllPoints()
                 self?.shapLayer.removeAllAnimations()
                 self?.shapLayer.removeFromSuperlayer()
-                //self?.shapLayer = nil
-                //self?.path = nil
             }
         }
     }

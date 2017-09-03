@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A0D5CBCC18743A3D99EC11BA49C387E /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB6E0850A30D52625F490639CF988B9 /* CheckBox.swift */; };
 		0EFBD5D635B9B96164D6D1DAF4776A6C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		1905619A0BD1E63E144FB7A146D1A4A3 /* Pods-CheckBox_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E3867A47230A18C00E9B0A53CBF0E070 /* Pods-CheckBox_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1FFB20E89A428A4322867F5B11D43CF0 /* CheckBox-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 26ED6F33A0ADECA0753F9E6F9EC20836 /* CheckBox-dummy.m */; };
-		20577DC153FCF74765BF931B7032093F /* CheckBox-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 775B7F6145C98A768E42445D32992D7F /* CheckBox-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20577DC153FCF74765BF931B7032093F /* CheckBox-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EA3C1650F2B6BA357112D27B94F1F6D /* CheckBox-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		31B346992490B664F5B43F6745EE9BAF /* Pods-CheckBox_Example-CheckBox_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B99B9C06F2DE6A6F9388E3C75ECA5D /* Pods-CheckBox_Example-CheckBox_Tests-dummy.m */; };
 		62FB9F531A7D55651FB406E3D65B8D92 /* Pods-CheckBox_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FB957AD0D44A662910F397894314EE /* Pods-CheckBox_Example-dummy.m */; };
+		8F13BCBD2BC2EEF5F65C97EB8DE10172 /* CheckBox-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D1E3AE7F8A29268F203F4C1F11E738 /* CheckBox-dummy.m */; };
 		A68C015002670A8FAF19584A4A69DC31 /* Pods-CheckBox_Example-CheckBox_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F0397F4B4696623E58C241376D3A7AEB /* Pods-CheckBox_Example-CheckBox_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ABC4CB7F59834B075160C1CA2E1CCB5B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		F2C8688D1CA4AA5CC334872FD70A1BC5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		FAD03C359D32D33D173707AB4D1A5523 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF4CA919F77ECA5A2ACC246D66AF5C9 /* CheckBox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,35 +37,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01D3845BFB02361B2AAB5BBF244B2EFB /* CheckBox.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CheckBox.xcconfig; sourceTree = "<group>"; };
 		0DD0F411175370ABAFE021BC7F993606 /* Pods-CheckBox_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CheckBox_Example-frameworks.sh"; sourceTree = "<group>"; };
+		1153CA408A8DC68B4DAED64C541830D2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		175A0B7CD6D7B5313008B937CC032A5C /* Pods-CheckBox_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-CheckBox_Example.modulemap"; sourceTree = "<group>"; };
+		18D1E3AE7F8A29268F203F4C1F11E738 /* CheckBox-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CheckBox-dummy.m"; sourceTree = "<group>"; };
 		1C8392FF09172C90F4D99BE01F9DC678 /* Pods-CheckBox_Example-CheckBox_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CheckBox_Example-CheckBox_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		26ED6F33A0ADECA0753F9E6F9EC20836 /* CheckBox-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CheckBox-dummy.m"; sourceTree = "<group>"; };
 		2EC9EBEABAB82D689668C952EF2A753B /* Pods-CheckBox_Example-CheckBox_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CheckBox_Example-CheckBox_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		3122E8A244325821060B2248C7D8C7B2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38DC8C6EE54A9DB8F4F286753974CD0D /* Pods-CheckBox_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CheckBox_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3EA3C1650F2B6BA357112D27B94F1F6D /* CheckBox-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CheckBox-umbrella.h"; sourceTree = "<group>"; };
 		41FB957AD0D44A662910F397894314EE /* Pods-CheckBox_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CheckBox_Example-dummy.m"; sourceTree = "<group>"; };
-		433E440DE5AD8FD6D5862173C75262F0 /* CheckBox.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = CheckBox.modulemap; sourceTree = "<group>"; };
 		568A409039657C0CA3B438F2FD9BF341 /* CheckBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CheckBox.framework; path = CheckBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AF4CA919F77ECA5A2ACC246D66AF5C9 /* CheckBox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CheckBox.swift; path = CheckBox/Classes/CheckBox.swift; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		775B7F6145C98A768E42445D32992D7F /* CheckBox-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CheckBox-umbrella.h"; sourceTree = "<group>"; };
 		7CBBCFE9CD7A19AABF0399DB4249662E /* Pods-CheckBox_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CheckBox_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		817454250D4BC9B9AA1C480CBC5902CE /* Pods-CheckBox_Example-CheckBox_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-CheckBox_Example-CheckBox_Tests.modulemap"; sourceTree = "<group>"; };
 		89F77D090C135B104BB5B191B08B0CA2 /* Pods-CheckBox_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CheckBox_Example.release.xcconfig"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		95529C90F7076B05A0C92CF92F3224E5 /* CheckBox.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CheckBox.xcconfig; sourceTree = "<group>"; };
 		9575AC5F3740AB06F694BAE64EACD667 /* Pods-CheckBox_Example-CheckBox_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CheckBox_Example-CheckBox_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		971465EF0A1727992189F95C7A47C204 /* Pods-CheckBox_Example-CheckBox_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CheckBox_Example-CheckBox_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9EA6B774B683511DA39E1F45ED97AF79 /* Pods_CheckBox_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CheckBox_Example.framework; path = "Pods-CheckBox_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A9BBE1104D284E11C590767C88A79C32 /* CheckBox-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CheckBox-prefix.pch"; sourceTree = "<group>"; };
+		AB987A8DD6774258A4F5E4A733C0D8AB /* CheckBox.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = CheckBox.modulemap; sourceTree = "<group>"; };
 		B3B99B9C06F2DE6A6F9388E3C75ECA5D /* Pods-CheckBox_Example-CheckBox_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CheckBox_Example-CheckBox_Tests-dummy.m"; sourceTree = "<group>"; };
 		B7113BCFF3505C4584DD30CDA93C7406 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C07E7E0AB32EFE6A87BC8D3EC7023EE5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C81371F29C28F1E06E6B4E49C7AFFCD3 /* Pods_CheckBox_Example_CheckBox_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CheckBox_Example_CheckBox_Tests.framework; path = "Pods-CheckBox_Example-CheckBox_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CCB6E0850A30D52625F490639CF988B9 /* CheckBox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		D09220DB7D8391D42A9FDECC4D50CA59 /* Pods-CheckBox_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CheckBox_Example-resources.sh"; sourceTree = "<group>"; };
 		DC57B606C3053EE3CC1C6FB7B3EAEF5D /* Pods-CheckBox_Example-CheckBox_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CheckBox_Example-CheckBox_Tests-resources.sh"; sourceTree = "<group>"; };
 		E3867A47230A18C00E9B0A53CBF0E070 /* Pods-CheckBox_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CheckBox_Example-umbrella.h"; sourceTree = "<group>"; };
+		E7EEF35C29E2FCE22B6A6EA744F86173 /* CheckBox-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CheckBox-prefix.pch"; sourceTree = "<group>"; };
 		EBDCD18965F09A97E240F3973FF5A800 /* Pods-CheckBox_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CheckBox_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F0397F4B4696623E58C241376D3A7AEB /* Pods-CheckBox_Example-CheckBox_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CheckBox_Example-CheckBox_Tests-umbrella.h"; sourceTree = "<group>"; };
 		F1DB29B2B382D13D88BFC69263357A69 /* Pods-CheckBox_Example-CheckBox_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CheckBox_Example-CheckBox_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -117,15 +117,6 @@
 			path = "Target Support Files/Pods-CheckBox_Example";
 			sourceTree = "<group>";
 		};
-		39DBE74F1141BE563C8FC71456F89C5E /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				CCB6E0850A30D52625F490639CF988B9 /* CheckBox.swift */,
-			);
-			name = Classes;
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		444A28C026E6E25287EA3A47269BED95 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,25 +127,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5B89D3F54B8F31A50ED5C92FF3E535B0 /* CheckBox */ = {
+		5C976A53453233385E85FFD23F81D6ED /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F6E5A94E2875C59A11E4BBDF154E1165 /* CheckBox */,
-				5CB7186247F41792E8B65C7DFE72FB95 /* Support Files */,
-			);
-			name = CheckBox;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		5CB7186247F41792E8B65C7DFE72FB95 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				433E440DE5AD8FD6D5862173C75262F0 /* CheckBox.modulemap */,
-				95529C90F7076B05A0C92CF92F3224E5 /* CheckBox.xcconfig */,
-				26ED6F33A0ADECA0753F9E6F9EC20836 /* CheckBox-dummy.m */,
-				A9BBE1104D284E11C590767C88A79C32 /* CheckBox-prefix.pch */,
-				775B7F6145C98A768E42445D32992D7F /* CheckBox-umbrella.h */,
-				C07E7E0AB32EFE6A87BC8D3EC7023EE5 /* Info.plist */,
+				AB987A8DD6774258A4F5E4A733C0D8AB /* CheckBox.modulemap */,
+				01D3845BFB02361B2AAB5BBF244B2EFB /* CheckBox.xcconfig */,
+				18D1E3AE7F8A29268F203F4C1F11E738 /* CheckBox-dummy.m */,
+				E7EEF35C29E2FCE22B6A6EA744F86173 /* CheckBox-prefix.pch */,
+				3EA3C1650F2B6BA357112D27B94F1F6D /* CheckBox-umbrella.h */,
+				1153CA408A8DC68B4DAED64C541830D2 /* Info.plist */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/CheckBox";
@@ -171,6 +152,16 @@
 			);
 			sourceTree = "<group>";
 		};
+		94CB80C25D368DBB641418F8F580D51D /* CheckBox */ = {
+			isa = PBXGroup;
+			children = (
+				5AF4CA919F77ECA5A2ACC246D66AF5C9 /* CheckBox.swift */,
+				5C976A53453233385E85FFD23F81D6ED /* Support Files */,
+			);
+			name = CheckBox;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,7 +173,7 @@
 		CC2E5886FA73178D1DDD252F8A284EFE /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5B89D3F54B8F31A50ED5C92FF3E535B0 /* CheckBox */,
+				94CB80C25D368DBB641418F8F580D51D /* CheckBox */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -222,15 +213,6 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		F6E5A94E2875C59A11E4BBDF154E1165 /* CheckBox */ = {
-			isa = PBXGroup;
-			children = (
-				39DBE74F1141BE563C8FC71456F89C5E /* Classes */,
-			);
-			name = CheckBox;
-			path = CheckBox;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -265,7 +247,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BE1A4D80427A06F5283986C6E86A999E /* Build configuration list for PBXNativeTarget "CheckBox" */;
 			buildPhases = (
-				5C72948DB6AD91E049E4013FFDAF75B6 /* Sources */,
+				C40164DB252FE837C53F52CDCE590D52 /* Sources */,
 				DC5232795A207C58D35ABB84F00C6ADB /* Frameworks */,
 				1AE7EAFC372661E8084A3B7DA9850AF2 /* Headers */,
 			);
@@ -351,12 +333,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5C72948DB6AD91E049E4013FFDAF75B6 /* Sources */ = {
+		C40164DB252FE837C53F52CDCE590D52 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FFB20E89A428A4322867F5B11D43CF0 /* CheckBox-dummy.m in Sources */,
-				0A0D5CBCC18743A3D99EC11BA49C387E /* CheckBox.swift in Sources */,
+				8F13BCBD2BC2EEF5F65C97EB8DE10172 /* CheckBox-dummy.m in Sources */,
+				FAD03C359D32D33D173707AB4D1A5523 /* CheckBox.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,7 +444,77 @@
 			};
 			name = Release;
 		};
-		643C76AA582046977B7877822ED7A258 /* Debug */ = {
+		7B15AA4C9445AA5AD1FFF1FE56BD5945 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01D3845BFB02361B2AAB5BBF244B2EFB /* CheckBox.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CheckBox/CheckBox-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CheckBox/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CheckBox/CheckBox.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = CheckBox;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8FC8FE3D08106C4D80DA395DCE47DB34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01D3845BFB02361B2AAB5BBF244B2EFB /* CheckBox.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CheckBox/CheckBox-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CheckBox/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CheckBox/CheckBox.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = CheckBox;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9BFC9E4A7AAD7A607ACE06D95A401A5A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -506,78 +558,10 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
-		};
-		711A22EEEBF271E0B8C0D3BFC67848A0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 95529C90F7076B05A0C92CF92F3224E5 /* CheckBox.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/CheckBox/CheckBox-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CheckBox/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CheckBox/CheckBox.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = CheckBox;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B59A33F11B060AE3A5E529B0496DD2B4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 95529C90F7076B05A0C92CF92F3224E5 /* CheckBox.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/CheckBox/CheckBox-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CheckBox/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CheckBox/CheckBox.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = CheckBox;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		C03B8870130C98D1B02B59D003687524 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -707,7 +691,7 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				643C76AA582046977B7877822ED7A258 /* Debug */,
+				9BFC9E4A7AAD7A607ACE06D95A401A5A /* Debug */,
 				C03B8870130C98D1B02B59D003687524 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -725,8 +709,8 @@
 		BE1A4D80427A06F5283986C6E86A999E /* Build configuration list for PBXNativeTarget "CheckBox" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				711A22EEEBF271E0B8C0D3BFC67848A0 /* Debug */,
-				B59A33F11B060AE3A5E529B0496DD2B4 /* Release */,
+				8FC8FE3D08106C4D80DA395DCE47DB34 /* Debug */,
+				7B15AA4C9445AA5AD1FFF1FE56BD5945 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

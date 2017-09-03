@@ -17,12 +17,12 @@ CheckBox is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "CheckBox"
+pod 'CheckBox'
 ```
 
 ## Author
 
-gemgemo, gemgemo@users.noreply.github.com
+Gamal, gamalal3yk@gmail.com
 
 ## License
 
