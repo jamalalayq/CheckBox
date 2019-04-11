@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  CheckBox
 //
-//  Created by gemgemo on 08/31/2017.
-//  Copyright (c) 2017 gemgemo. All rights reserved.
+//  Created by Jamal on 08/31/2017.
+//  Copyright (c) 2017 Jamal alayq. All rights reserved.
 //
 
 import UIKit
@@ -13,18 +13,12 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var chk: CheckBox!
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         chk.cornerRadius = 7
         chk.onClick = { (checkbox) in
             print(checkbox.isChecked)
         }
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
 }

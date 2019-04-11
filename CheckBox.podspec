@@ -8,7 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CheckBox'
-  s.version          = '0.1.2'
+  s.version          = '1.0.0'
+  s.swift_version    = '5.0'
   s.summary          = 'CheckBox swift ui control.'
 
 # This description is used to generate tags and improve search results.
@@ -21,12 +22,12 @@ Pod::Spec.new do |s|
 my own checkbox swift ui control.
                        DESC
 
-  s.homepage         = 'https://github.com/gemgemo/CheckBox'
+  s.homepage         = 'https://github.com/jamalalayq/CheckBox'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'gamal' => 'gamalal3yk@gmail.com' }
-  s.source           = { :git => 'https://github.com/gemgemo/CheckBox.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'Jamal' => 'gamalal3yk@gmail.com' }
+  s.source           = { :git => 'https://github.com/jamalalayq/CheckBox.git', :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/jamalelayeq'
 
   s.ios.deployment_target = '10.0'
 

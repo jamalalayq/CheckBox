@@ -1,4 +1,7 @@
-//: Playground - noun: a place where people can play
+//
+// Created by Jamal alayq
+//
+// jamal.alayq@outlook.com
 
 import UIKit
 
@@ -165,7 +168,7 @@ public final class CheckBox: UIControl {
         shapLayer.strokeColor = markColor.cgColor
         shapLayer.fillColor = UIColor.clear.cgColor
         shapLayer.lineWidth = markWidth
-        shapLayer.lineCap = kCALineCapRound
+        shapLayer.lineCap = CAShapeLayerLineCap.round
         shapLayer.strokeStart = 0
         shapLayer.strokeEnd = 1
         checkPanel.layer.addSublayer(shapLayer)
@@ -173,9 +176,9 @@ public final class CheckBox: UIControl {
         basicAnimation.duration = 0.6
         basicAnimation.fromValue = 0.0
         basicAnimation.toValue = 1.0
-        basicAnimation.fillMode = kCAFillModeBoth
+        basicAnimation.fillMode = CAMediaTimingFillMode.both
         basicAnimation.isRemovedOnCompletion = false
-        basicAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        basicAnimation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
         shapLayer.add(basicAnimation, forKey: basicAnimation.keyPath)
         
     }
@@ -186,9 +189,9 @@ public final class CheckBox: UIControl {
             basicAnimation.duration = 0.4
             basicAnimation.fromValue = 1.0
             basicAnimation.toValue = 0.0
-            basicAnimation.fillMode = kCAFillModeBoth
+            basicAnimation.fillMode = CAMediaTimingFillMode.both
             basicAnimation.isRemovedOnCompletion = false
-            basicAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+            basicAnimation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
             shapLayer.add(basicAnimation, forKey: basicAnimation.keyPath)
             DispatchQueue.main.asyncAfter(deadline: .now()+0.4) { [weak self] in
                 self?.path.removeAllPoints()
